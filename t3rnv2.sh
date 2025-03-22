@@ -182,16 +182,16 @@ install_node() {
     echo
 
     
-    
-   
+
+
     echo -e "${CYAN}⬇️   Downloading executor-linux-v0.$VERSION.0.tar.gz${RESET}"
-    curl -L -O https://github.com/t3rn/executor-release/releases/download/v0.$VERSION.0/executor-linux-v0.$VERSION.0.ta>
+    curl -L -O https://github.com/t3rn/executor-release/releases/download/v0.$VERSION.0/executor-linux-v0.$VERSION.0.tar.gz;
+
 
     echo -e "${YELLOW}🧰
     Extracting the file...${RESET}";
     tar -xvzf executor-linux-v0.$VERSION.0.tar.gz;
     echo
-
     # Check if extraction was successful
     if [ $? -eq 0 ]; then
         echo -e "${GREEN}✅  Extraction successful.${RESET}"
